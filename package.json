@@ -32,6 +32,11 @@
     "eslint-plugin-standard": "^3.0.1",
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0",
-    "vinyl-source-stream": "^2.0.0"
+    "vinyl-source-stream": "^2.0.0",
+    "watchify": "^3.10.0"
+  },
+  "scripts": {
+    "build": "gulp",
+    "start": "gulp watch | node server.js" 
   }
 }
