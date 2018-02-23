@@ -1,4 +1,13 @@
-var numbers = [1, 5, 10, 15];
-var doubles = numbers.map( x => x * 2 );
+var page = require('page');
 
-console.log(doubles);
+var main = document.getElementById('main_container');
+
+page('/', function (ctx , next) {
+	main.innerHTML='home';
+});
+
+page('/signup', function(ctx , next){
+	main.innerHTML='signup';
+});
+
+page();

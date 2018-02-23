@@ -3,7 +3,7 @@ var app = express();
 
 app.set('view engine', 'pug');
 app.use(express.static(__dirname + '/public')); 
-app.get('/', function (req, res) {
+app.get(['/','/signup', '/signin'], function (req, res) {
 	res.render('index');
 });
 app.listen(3000, function () {
